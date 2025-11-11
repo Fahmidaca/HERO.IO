@@ -1,0 +1,176 @@
+.home {
+  padding: 2rem;
+  color: #333;
+}
+
+.banner {
+  text-align: center;
+  margin-bottom: 3rem;
+  background-color: #fff;
+  padding: 3rem 2rem;
+  border-radius: 8px;
+}
+
+.banner h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+  font-weight: bold;
+}
+
+.purple-text {
+  color: #6C5CE7;
+}
+
+.banner p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #666;
+}
+
+.hero-image {
+  width: 100%;
+  max-width: 500px;
+  margin: 1rem auto;
+  display: block;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn {
+  background-color: #6C5CE7;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn-icon {
+  width: 20px;
+  height: 20px;
+  filter: invert(1);
+}
+
+.states {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+  background-color: #6C5CE7;
+  padding: 4rem 2rem;
+  border-radius: 8px;
+}
+
+.states h2 {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  color: #fff;
+  text-align: center;
+}
+
+.states-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  width: 100%;
+}
+
+.state-card {
+  text-align: center;
+  padding: 1rem;
+}
+
+.state-card p:first-child {
+  color: #fff;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.state-card h3 {
+  font-size: 2rem;
+  margin: 0.5rem 0;
+  color: #fff;
+  font-weight: bold;
+}
+
+.state-card p:last-child {
+  color: #fff;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+.top-apps {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.top-apps h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.section-description {
+  text-align: center;
+  color: #666;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.apps-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.show-all {
+  display: block;
+  text-align: center;
+  background-color: #6C5CE7;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .banner h1 {
+    font-size: 2rem;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .states {
+    flex-direction: column;
+  }
+
+  .state-card {
+    margin: 0.5rem 0;
+  }
+
+  .apps-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .apps-grid {
+    grid-template-columns: 1fr;
+  }
+}
